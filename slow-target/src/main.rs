@@ -13,7 +13,7 @@ use std::{thread, time};
 fn index(id: i64) -> Json<ApiResult> {
     let requested_at = current_time();
 
-    let sleep_for = time::Duration::from_secs(5);
+    let sleep_for = time::Duration::from_secs(10);
     thread::sleep(sleep_for);
 
     let responded_at = current_time();

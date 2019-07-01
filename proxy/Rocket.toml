@@ -1,6 +1,6 @@
 [development]
 address = "localhost"
-port = 8069
+port = 8001
 workers = 10
 keep_alive = 5
 log = "normal"
