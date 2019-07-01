@@ -122,10 +122,10 @@ impl Cache {
         }
     }
 
-    pub fn store(&mut self, item: &ApiResult) -> String {
+    pub fn store(&mut self, item: &ApiResult) -> bool {
         let id = item.id;
         self.data.insert(id, item.clone());
-        "OK".to_string()
+        true
     }
 
     pub fn lookup(&self, id: &i64) -> Option<ApiResult> {
